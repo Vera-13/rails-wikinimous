@@ -1,0 +1,19 @@
+<div class="container">
+<%= form_with model: @article do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :content %>
+  <%= f.text_field :content %>
+  <%= f.submit %>
+<% end %>
+</div>
+<div class="container p-1">
+<%= link_to article_path(@article), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} do %>
+<i class="fa-regular fa-trash-can"></i><span>Delete</span>
+<% end %>
+</div>
+<div class="container p-1">
+<%= link_to articles_path  do %>
+<i class="fa-solid fa-house"></i><span>Home</span>
+<% end %>
+</div>

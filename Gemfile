@@ -59,6 +59,10 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
 end
 
+gem "faker"
+gem "bootstrap", "~> 5.0"
+gem "bootstrap_form", "~> 5.4"
+
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
